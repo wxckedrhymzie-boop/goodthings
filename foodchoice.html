@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Choice</title>
+</head>
+<body>
+
+    <h2>Your Food Choices</h2>
+
+    <p><strong>Favorite Foods:</strong> <span id="showFoods"></span></p>
+    <p><strong>Favorite Drink:</strong> <span id="showDrink"></span></p>
+
+    <script>
+        document.getElementById("showFoods").textContent =
+            localStorage.getItem("email") || "No food entered";
+
+        document.getElementById("showDrink").textContent =
+            localStorage.getItem("password") || "No drink entered";
+    </script>
+
+</body>
+</html>
